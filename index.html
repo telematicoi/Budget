@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Budget</title>
+	 <link href="imagenes/icos/BG.ico" rel="shortcut icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+<script type="text/javascript" src="js/code.js"></script>
+</head>
+
+<body>
+   <header>      
+		<div class="width">
+				<div class="logo">
+				<a href="index.html"><img src="imagenes/BG.jpg"  class="mediana" alt="BG" title"Logo de BudGet"/> </a>
+				</div>
+				<nav class="">
+					<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#"onmousedown="sound.play()">Registrate</a></li>
+				<li><a href="#"onmousedown="sound.play()">Entrar</a></li>
+				<li><a href="#"onmousedown="sound.play()">Ayuda</a></li>
+					</ul>
+				</nav>
+
+		</div>	
+	</header><br>
+ 
+	
+
+	<div class="general">
+		<!-- Tipos de Ingresos -->
+	  <form name="Form1" action="" id="Fingreso">
+	  	<table border="2px"> 
+	  	          <tr>
+	  	              <td rowspan="5"><strong class="E-Encavezado">INGRESOS</strong></td>
+	  	              <th>Salario</th>
+	  	              <td><INPUT type="text" name="ValIngreso"  onblur="sumai()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	          <tr>
+	  	              <th>Pension</th>
+	  	              <td><INPUT type="text" name="ValIngreso"  onblur="sumai()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	          <tr>
+	  	              <th>Vecas</th>
+	  	              <td><INPUT type="text" name="ValIngreso"  onblur="sumai()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	           <tr>
+	  	              <th>Ventas</th>
+	  	              <td><INPUT type="text" name="ValIngreso"  onblur="sumai()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	           <tr>
+	  	              <th>Otros</th>
+	  	              <td><INPUT type="text" name="ValIngreso"  onblur="sumai()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	           <tr>
+	  	              <th>INGRESO TOTAL C$:</th>
+	  	              <td><INPUT type="text" name="Tingresos" id="Tingresos" readonly="solo lectura"></td>
+	  	          </tr>
+	  	      </table>
+	  	      <input type="reset" value="Borrar información" class="reset">
+	  </form>
+	
+		<!-- Tipos de Ingresos -->
+	  <form name="Form2" action="" id="Fgastos">
+	  	<table border="2px"> 
+	  	          <tr>
+	  	              <td rowspan="16"><strong class="E-Encavezado">GASTOS</strong></td>
+	  	               <tr>
+	  	              <th  colspan="2" class="centrar">GASTOS FIJOS</th>
+	  	            </tr>
+	  	              <th>Alquiler</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	          <tr>
+	  	              <th>Comida</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	          <tr>
+	  	              <th>Transporte</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Celular</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Ahorro</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Internet(Wifi)</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Material didáctico</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Educación</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th  colspan="2" class="centrar">GASTOS VARIABLES</th>
+	  	            </tr>
+					 <tr>
+	  	              <th>Entretenimiento</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Vestimenta</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	          	 <tr>
+	  	              <th>Salud</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+					 <tr>
+	  	              <th>Imprevisto</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>
+	  	          	 <tr>
+	  	              <th>Pago de deudas</th>
+	  	              <td><INPUT type="text" name="ValGasto"  onblur="sumag()" onkeypress="return solonumeros(event)"></td>
+	  	          </tr>	
+	  	           <tr>
+	  	              <th>GASTO TOTAL C$:</th>
+	  	              <td><INPUT type="text" name="Tgastos" id="Tgastos" readonly="solo lectura"></td>
+	  	          </tr>
+	  	      </table>
+	  	      <input type="reset" value="Borrar información" class="reset">
+	  </form>
+
+
+<form name="f" id="calc">
+<p><strong><i>Saldo en efectivo C$:</i></strong><input type="text" class="form-control" id="SaldoEfectivo" readonly="sololectura" ></p>
+</form>
+<button id="btnresta" onclick="resta()" >Calcular</button >
+	</div>	
+
+		<script src="bootstrap/js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>	
+	</body>
+</html>
